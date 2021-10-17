@@ -1,12 +1,12 @@
 package com.bridgelabz.userRegistration;
-//Uc5
+//Uc6
 import java.util.Scanner;
 import java.util.regex.Pattern;
 public class Validation {
 	public static final String NAME_REGEX="[A-Z][a-z]{2,}";
 	public static final String NUMBER_REGEX="91\s{1}[7-9]{1}[0-9]{9}";
 	public static final String EMAIL_REGEX="[A-Za-z]+(\\.[A-Za-z]+)?@[a-zA-Z]+\\.co(m)?(\\.in)?";
-	public static final String PASSWORD="[a-zA-z0-9]{8,}";
+	public static final String PASSWORD="(?=.*[A-Z]).{8,}";
 	public static boolean validateName(String name) {
 		return Pattern.matches(NAME_REGEX, name);
 	}
