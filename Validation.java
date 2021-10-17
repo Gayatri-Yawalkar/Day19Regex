@@ -1,5 +1,5 @@
 package com.bridgelabz.userRegistration;
-//Uc1
+//Uc2
 import java.util.Scanner;
 import java.util.regex.Pattern;
 public class Validation {
@@ -12,5 +12,8 @@ public class Validation {
 		System.out.println("Enter First Name");
 		String firstName=sc.next();
 		System.out.println(validateName(firstName));
+		System.out.println("Enter Last Name");
+		String lastName=sc.next();
+		System.out.println(validateName(lastName));
 	}
 }
